@@ -1,12 +1,12 @@
-#AAFaceDetection: Visage
+# AAFaceDetection: Visage
 Prototyping-Library providing easy access to iOS face detection features through NSNotification.
 
-##Introduction
+## Introduction
 Although face-recognition was first introduced to the platform by Apple in iOS 5, we haven't seen much creative use of this quite interesting feature, especially on live video. This technology is especially interesting for prototyping experimental user-interfaces that make use of the user's emotion (smiling, blinking or winking) or detect the user's attention (whether he is looking at the screen or not). That's why I wanted to make it as easy as possible to prototype those interactions with a simple model based on NSNotification whenever the status of the user's face changes. All the main features of Apples CIDetector(ofType: CIDetectorTypeFace…) are implemented and can be easily accessed.
 
 *Please keep in mind that this is meant as a tool for designers using Swift to prototype. This isn't meant for production environments but for quick experimentation with interactions. I've been doing a few private experiments with it as well as one big project for university, but it's still a work in progress.*
 
-##Usage
+## Usage
 To start using "AAFaceDetection/Visage" just drag the "Visage.swift" file into your project folder.
 
 Visage is instantiated by passing a camera-position and an optimization setting for performance like this:
@@ -59,12 +59,12 @@ Visage provides a bunch of properties:
 Visage also provides a previewView of the camera-image as this is something you might want.
 Just add it to your view hierarchy like this: `self.view.addSubview(visage!.visageCameraView)`.
 
-##Example Project
+## Example Project
 The very simple example project hopefully demonstrates the gist of using "AAFaceDetection/Visage" and is thoroughly commented. If you have any questions don't hesitate contacting me [@aaronabentheuer](http://www.twitter.com/aaronabentheuer).
 
 ![screencast](https://github.com/aaronabentheuer/AAFaceDetection/blob/master/screencast.gif)
 
-##License
+## License
 Released under the **MIT License**.
 Copyright © 2015 [Aaron Abentheuer](http://www.aaronabentheuer.com).
 
